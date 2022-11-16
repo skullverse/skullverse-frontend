@@ -8,7 +8,7 @@
     position: absolute;
     width: 100%;
     z-index: 1000;
-    height: 108px;
+    height: 80px;
     background-color: transparent;
     @include flex(center,space-between);   
     #site-header-inner {
@@ -255,6 +255,58 @@
     }
 } 
 
+.btnforWallett{
+    background-color: transparent;
+    border-radius: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border: none;
+    color: yellow;
+    width: 200px;
+    // height: 64px;
+    // line-height: 64px;
+    padding: 8px;
+    text-align: center;
+    border:solid 1px white ;
+    // .effect {
+    //     display: block;
+    //     &::before, 
+    //     &::after {
+    //         content:"";
+    //         width:2px;
+    //         height:0;
+    //         position: absolute;
+    //         transition: all 0.2s linear;
+    //         background: #fff;
+    //     }
+    // }
+    // &::before, 
+    // &::after {
+    //     content:"";
+    //     width: 0;
+    //     height: 2px;
+    //     position: absolute;
+    //     transition: all 0.2s linear;
+    //     background: #fff;
+    // }
+    &:hover {
+        border:solid 2px white ;
+        border-radius: 0px;
+        color: yellow;
+        &::before, 
+        &::after{
+            width: 100%;
+        }
+        .effect {
+            &::before,
+            &::after{
+                height: 100%;
+            }
+        }
+    }
+    
+}
+
 /* Mobile Menu Button */
 .mobile-button {
     @include transition3;
@@ -334,7 +386,9 @@
 
 /* Header Fixed
 -------------------------------------------------------------- */
-#header_main
+#header_main{
+    background-color: #0d1d15;
+}
 
 #header_main.main.is-fixed {
     background-color: #190d3e;
