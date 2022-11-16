@@ -1,0 +1,38 @@
+.modalClass{
+    
+    .modal-content{
+        background: #070f0b;
+    }
+    .modal-header{
+        button{
+            color:white;
+        }
+    }
+}
+
+.homePage_image{
+    
+        &:before{
+            content: "";
+            height: 140%;
+            width: 140%;
+            left: 60px;
+            top: -200px;
+            position: absolute;
+            background-image   : url('../../assets/images/skull/photo_2.png');
+            background-repeat  : no-repeat;
+            background-position: center center;
+        }
+         &:after {
+            content: "";
+            height: 90%;
+            right: 289px;
+            width: 36%;
+            bottom: 0px;
+            position: absolute;
+            background:url('../../assets/images/skull/photo_3.png') 0% 0% / 100% 100% no-repeat;
+        }
+        
+    
+   
+}
