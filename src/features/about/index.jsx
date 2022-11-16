@@ -30,7 +30,7 @@ function About(props) {
                                 {/* <p className="h8 sub-title">{dataBlock.subtitle}</p> */}
                                 <h4 className="title">Skullverse Ecosystem</h4>
                             </div>
-                            <p>{dataBlock.desc}</p>
+                            {/* <p>{dataBlock.desc}</p> */}
                                 {/* <Button title="get Nfts" path='/' /> */}
                         </div>
                     </div>
